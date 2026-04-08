@@ -24,7 +24,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Tag}/{action=Index}/{id?}");
 app.UseAuthorization();
 
 app.MapRazorPages();

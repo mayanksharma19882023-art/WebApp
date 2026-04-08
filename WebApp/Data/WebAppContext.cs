@@ -30,7 +30,7 @@ namespace WebApp.Data
                 .HasPrecision(15, 2);
             modelBuilder.Entity<Payment>()
                 .Property(p => p.Amount)
-                .HasPrecision(15, 2);
+                .HasPrecision(15, 2); 
             // Many-to-Many (Option B)
             modelBuilder.Entity<ProductTag>()
                 .HasKey(pt => new { pt.ProductId, pt.TagId });
